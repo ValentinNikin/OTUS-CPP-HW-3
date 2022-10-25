@@ -21,7 +21,13 @@ add_executable(
 add_library(
         ${MAIN_LIBRARY_NAME}
         ${PROJECT_SOURCE_DIR}/src/CustomAllocator.h
-        ${PROJECT_SOURCE_DIR}/src/CustomAllocator.cpp)
+
+        ${PROJECT_SOURCE_DIR}/src/MemoryBlock.h
+
+        ${PROJECT_SOURCE_DIR}/src/DynamicBitset.h
+        ${PROJECT_SOURCE_DIR}/src/DynamicBitset.cpp
+
+        ${PROJECT_SOURCE_DIR}/src/CustomList.h)
 
 set_target_properties(
         ${EXECUTABLE_NAME} ${MAIN_LIBRARY_NAME} PROPERTIES

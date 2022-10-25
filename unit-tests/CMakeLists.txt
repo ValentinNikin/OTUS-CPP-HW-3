@@ -8,7 +8,11 @@ set(UNIT_TEST_EXECUTABLE_NAME unit_tests)
 
 add_executable(
     ${UNIT_TEST_EXECUTABLE_NAME}
-    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+
+    ${CMAKE_CURRENT_SOURCE_DIR}/UnittestDynamicBitset.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/UnittestMemoryBlock.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/UnittestCustomList.cpp)
 
 target_include_directories(
     ${UNIT_TEST_EXECUTABLE_NAME} 
